@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>بُنّ | قهوة مختصة تصلك كل أسبوع</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<style>
+:root{--bg:#F6F3EC;--surface:#FFFFFF;--ink:#1B2B2A;--muted:#55635F;--teal:#0F3D3E;--on-teal:#F6F3EC;--saffron:#E9A82B;--line:#D9D3C4;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0C1A1A;--surface:#132625;--ink:#EFEBDF;--muted:#A5B3AE;--teal:#1D5A5B;--on-teal:#F6F3EC;--saffron:#F0B84A;--line:#274240;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0C1A1A;--surface:#132625;--ink:#EFEBDF;--muted:#A5B3AE;--teal:#1D5A5B;--on-teal:#F6F3EC;--saffron:#F0B84A;--line:#274240;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans Arabic',system-ui,sans-serif;line-height:1.8}
+h1,h2,h3,.logo{font-family:'Reem Kufi','IBM Plex Sans Arabic',sans-serif}
+.muted{color:var(--muted)}
+.btn{display:inline-block;padding:.75rem 1.6rem;border-radius:.6rem;font-weight:600;transition:transform .15s,background .2s}
+.btn-primary{background:var(--saffron);color:#1B2B2A}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-ghost{border:1.5px solid var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--saffron)}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--saffron);outline-offset:3px}
+.band{background:var(--teal);color:var(--on-teal)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:1rem}
+.big{font-size:clamp(5rem,22vw,13rem);line-height:.9;color:var(--saffron);font-weight:700}
+.dot{width:.7rem;height:.7rem;border-radius:50%;background:var(--line);display:inline-block}
+.dot.on{background:var(--saffron)}
+@media (prefers-reduced-motion:no-preference){.rise{animation:rise .8s ease both}}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header class="band sticky top-0 z-50" style="padding-top:env(safe-area-inset-top,0px)">
+  <div class="max-w-6xl mx-auto px-5 py-3 flex items-center justify-between">
+    <a href="#top" class="logo text-2xl font-bold" style="color:var(--saffron)">بُنّ</a>
+    <nav class="hidden md:flex gap-8 text-sm" aria-label="القائمة الرئيسية">
+      <a href="#how" class="hover:underline">كيف يعمل</a>
+      <a href="#roasts" class="hover:underline">أنواع التحميص</a>
+      <a href="#plans" class="hover:underline">الباقات</a>
+    </nav>
+    <a href="#plans" class="btn btn-primary text-sm !py-2">اشترك الآن</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="max-w-6xl mx-auto px-5 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+  <div class="rise">
+    <h1 class="text-4xl md:text-6xl font-bold leading-tight">قهوة طازجة تصل بابك كل أسبوع</h1>
+    <p class="muted mt-5 text-lg max-w-md">نحمّص حبوب القهوة المختصة في القاهرة كل يوم اثنين، ونوصلها إليك خلال ٤٨ ساعة من التحميص.</p>
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="#plans" class="btn btn-primary">اختر باقتك</a>
+      <a href="#how" class="btn btn-ghost">كيف يعمل الاشتراك</a>
+    </div>
+  </div>
+  <div class="card p-8 text-center rise" style="animation-delay:.15s">
+    <div class="big logo" aria-hidden="true">بُنّ</div>
+    <p class="muted mt-4">تحميص اليوم، في فنجانك بعد يومين</p>
+  </div>
+</section>
+
+<section id="how" class="band py-16">
+  <div class="max-w-6xl mx-auto px-5">
+    <h2 class="text-3xl font-bold">ثلاث خطوات فقط</h2>
+    <ol class="mt-10 grid md:grid-cols-3 gap-8">
+      <li><span class="logo text-5xl" style="color:var(--saffron)">١</span><h3 class="text-xl font-bold mt-2">اختر نوع التحميص</h3><p class="mt-2 opacity-90">من خفيف الحموضة إلى داكن قوي، حسب ذوقك.</p></li>
+      <li><span class="logo text-5xl" style="color:var(--saffron)">٢</span><h3 class="text-xl font-bold mt-2">حدّد الكمية والموعد</h3><p class="mt-2 opacity-90">نصف كيلو أو كيلو، كل أسبوع أو كل أسبوعين.</p></li>
+      <li><span class="logo text-5xl" style="color:var(--saffron)">٣</span><h3 class="text-xl font-bold mt-2">استلم وأوقف متى شئت</h3><p class="mt-2 opacity-90">يمكنك تأجيل الشحنة أو إلغاء الاشتراك من هاتفك في أي وقت.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="roasts" class="max-w-6xl mx-auto px-5 py-16">
+  <h2 class="text-3xl font-bold">ثلاثة أنواع، لكل ذوق</h2>
+  <div class="mt-10 grid md:grid-cols-3 gap-6">
+    <article class="card p-6">
+      <h3 class="text-xl font-bold">إثيوبيا يرغاتشيف</h3>
+      <p class="muted mt-1">تحميص خفيف، نكهة زهرية وحمضيات</p>
+      <p class="mt-5 text-sm muted">القوة</p>
+      <div class="mt-1" aria-label="القوة ١ من ٥"><span class="dot on"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span></div>
+    </article>
+    <article class="card p-6">
+      <h3 class="text-xl font-bold">كولومبيا هويلا</h3>
+      <p class="muted mt-1">تحميص متوسط، كراميل وشوكولاتة</p>
+      <p class="mt-5 text-sm muted">القوة</p>
+      <div class="mt-1" aria-label="القوة ٣ من ٥"><span class="dot on"></span> <span class="dot on"></span> <span class="dot on"></span> <span class="dot"></span> <span class="dot"></span></div>
+    </article>
+    <article class="card p-6">
+      <h3 class="text-xl font-bold">خلطة بُنّ الداكنة</h3>
+      <p class="muted mt-1">تحميص داكن، قوام ثقيل ومناسب للإسبريسو</p>
+      <p class="mt-5 text-sm muted">القوة</p>
+      <div class="mt-1" aria-label="القوة ٥ من ٥"><span class="dot on"></span> <span class="dot on"></span> <span class="dot on"></span> <span class="dot on"></span> <span class="dot on"></span></div>
+    </article>
+  </div>
+</section>
+
+<section id="plans" class="max-w-6xl mx-auto px-5 pb-16">
+  <h2 class="text-3xl font-bold">الباقات</h2>
+  <p class="muted mt-2">الشحن مجاني على كل الباقات داخل القاهرة والجيزة.</p>
+  <div class="mt-10 grid md:grid-cols-3 gap-6 items-stretch">
+    <div class="card p-7 flex flex-col">
+      <h3 class="text-xl font-bold">فنجان</h3>
+      <p class="mt-3"><span class="logo text-4xl font-bold">٢٥٠</span> <span class="muted">جنيه / شهرياً</span></p>
+      <ul class="mt-5 space-y-2 muted flex-1"><li>٢٥٠ جرام كل أسبوعين</li><li>نوع واحد من اختيارك</li></ul>
+      <a href="#" class="btn btn-ghost mt-6 text-center">ابدأ بفنجان</a>
+    </div>
+    <div class="card p-7 flex flex-col" style="border:2px solid var(--saffron)">
+      <h3 class="text-xl font-bold">ركوة <span class="text-sm font-medium px-2 py-0.5 rounded" style="background:var(--saffron);color:#1B2B2A">الأكثر طلباً</span></h3>
+      <p class="mt-3"><span class="logo text-4xl font-bold">٤٥٠</span> <span class="muted">جنيه / شهرياً</span></p>
+      <ul class="mt-5 space-y-2 muted flex-1"><li>٥٠٠ جرام كل أسبوعين</li><li>نوعان من اختيارك</li><li>طحن حسب طريقة التحضير</li></ul>
+      <a href="#" class="btn btn-primary mt-6 text-center">ابدأ بركوة</a>
+    </div>
+    <div class="card p-7 flex flex-col">
+      <h3 class="text-xl font-bold">دلّة</h3>
+      <p class="mt-3"><span class="logo text-4xl font-bold">٨٠٠</span> <span class="muted">جنيه / شهرياً</span></p>
+      <ul class="mt-5 space-y-2 muted flex-1"><li>١ كيلو كل أسبوع</li><li>الأنواع الثلاثة بالتناوب</li><li>أولوية في الشحن</li></ul>
+      <a href="#" class="btn btn-ghost mt-6 text-center">ابدأ بدلّة</a>
+    </div>
+  </div>
+</section>
+
+<section class="band py-14 text-center">
+  <div class="max-w-2xl mx-auto px-5">
+    <h2 class="text-3xl font-bold">أول شحنة بنصف السعر</h2>
+    <p class="mt-3 opacity-90">اشترك هذا الأسبوع واحصل على خصم ٥٠٪ على شحنتك الأولى.</p>
+    <a href="#plans" class="btn btn-primary mt-6">احجز شحنتك الأولى</a>
+  </div>
+</section>
+</main>
+
+<footer class="max-w-6xl mx-auto px-5 py-8 flex flex-wrap gap-4 justify-between muted text-sm">
+  <span>© ٢٠٢٦ بُنّ. موقع تجريبي لأغراض العرض.</span>
+  <span>hello@bonn.example</span>
+</footer>
+
+</body>
+</html>
